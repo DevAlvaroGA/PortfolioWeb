@@ -1,190 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álvaro Gracia Aledo - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body data-theme="light">
+
     <header>
         <nav>
             <div class="logo">AG</div>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
-                <li><a href="#skills" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
-                <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
-                <li><a href="#experience" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
-                <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
+
             <div class="controls">
                 <button class="btn-control" onclick="toggleTheme()">🌓</button>
-                <button class="btn-control" onclick="toggleLanguage()" id="langBtn">EN</button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
+
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-content">
-                <h1 data-es="Hola, soy Álvaro" data-en="Hi, I'm Álvaro">Hola, soy Álvaro</h1>
-                <p class="subtitle" data-es="Desarrollador Junior" data-en="Junior Developer">Desarrollador Junior</p>
-                <p data-es="Sociable, responsable y creativo, con ganas de aprender y trabajar. Proactivo y orientado a realizar las tareas de forma eficiente y eficaz." data-en="Sociable, responsible and creative, eager to learn and work. Proactive and focused on performing tasks efficiently and effectively.">
-                    Sociable, responsable y creativo, con ganas de aprender y trabajar. Proactivo y orientado a realizar las tareas de forma eficiente y eficaz.
+                <h1>Hola, soy Álvaro</h1>
+                <p class="subtitle">Desarrollador Junior</p>
+                <p>
+                    Desarrollador con enfoque en frontend, UI/UX y aplicaciones multiplataforma.<br>
+                    Motivado por aprender, construir y mejorar productos digitales.
                 </p>
+
                 <div class="social-links">
-                    <a href="#" class="social-btn" title="GitHub" target="_blank">🐙</a>
-                    <a href="#" class="social-btn" title="LinkedIn" target="_blank">💼</a>
-                    <a href="mailto:graciaaledo.alvaro@gmail.com" class="social-btn" title="Email">✉️</a>
+                    <a href="https://github.com/DevAlvaroGA" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:graciaaledo.alvaro@gmail.com" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email">
+                    </a>
                 </div>
             </div>
+
             <div class="hero-image">
-                <div class="profile-circle">AG</div>
+                <div class="profile-circle">
+                    <img class="profile-circle" src="./images/profileCuadrado.png" alt="Foto de Perfil">
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ABOUT -->
         <section id="about">
-            <h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+            <h2>Sobre mí</h2>
+
             <div class="about-content">
-                <p data-es="Estudiante de Diseño de Aplicaciones Multiplataforma con experiencia en desarrollo web y móvil. Apasionado por la tecnología y el aprendizaje continuo." data-en="Student of Multiplatform Application Design with experience in web and mobile development. Passionate about technology and continuous learning.">
-                    Estudiante de Diseño de Aplicaciones Multiplataforma con experiencia en desarrollo web y móvil. Apasionado por la tecnología y el aprendizaje continuo.
+                <p>
+                    Estudiante de Desarrollo de Aplicaciones Multiplataforma con experiencia
+                    en desarrollo web y móvil. Apasionado por la tecnología y el diseño de interfaces.
                 </p>
+
                 <div class="about-grid">
                     <div class="about-item">
-                        <h3 data-es="📍 Ubicación" data-en="📍 Location">📍 Ubicación</h3>
+                        <h3>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlemaps.svg"
+                                class="about-icon">
+                            Ubicación
+                        </h3>
                         <p>Cartagena, Murcia</p>
                     </div>
+
                     <div class="about-item">
-                        <h3 data-es="📧 Email" data-en="📧 Email">📧 Email</h3>
+                        <h3>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" class="about-icon">
+                            Email
+                        </h3>
                         <p>graciaaledo.alvaro@gmail.com</p>
                     </div>
+
                     <div class="about-item">
-                        <h3 data-es="📱 Teléfono" data-en="📱 Phone">📱 Teléfono</h3>
+                        <h3>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+                                class="about-icon">
+                            Teléfono
+                        </h3>
                         <p>644 108 471</p>
                     </div>
+
                     <div class="about-item">
-                        <h3 data-es="🌍 Idiomas" data-en="🌍 Languages">🌍 Idiomas</h3>
-                        <p data-es="Español (Nativo), Inglés (B1), Alemán (A1)" data-en="Spanish (Native), English (B1), German (A1)">Español (Nativo), Inglés (B1), Alemán (A1)</p>
+                        <h3>
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googletranslate.svg"
+                                class="about-icon">
+                            Idiomas
+                        </h3>
+                        <p>Español (Nativo), Inglés (B1), Alemán (A1)</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- SKILLS -->
         <section id="skills">
-            <h2 data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
+            <h2>Habilidades Técnicas</h2>
+
             <div class="skills-grid">
-                <div class="skill-card"><div class="icon">🔧</div><strong>Git</strong></div>
-                <div class="skill-card"><div class="icon">☕</div><strong>Java</strong></div>
-                <div class="skill-card"><div class="icon">🐍</div><strong>Python</strong></div>
-                <div class="skill-card"><div class="icon">⚛️</div><strong>React</strong></div>
-                <div class="skill-card"><div class="icon">📱</div><strong>React Native</strong></div>
-                <div class="skill-card"><div class="icon">📜</div><strong>JavaScript</strong></div>
-                <div class="skill-card"><div class="icon">🔷</div><strong>TypeScript</strong></div>
-                <div class="skill-card"><div class="icon">🎨</div><strong>HTML/CSS</strong></div>
-                <div class="skill-card"><div class="icon">🗄️</div><strong>SQL</strong></div>
-                <div class="skill-card"><div class="icon">🎮</div><strong>Unity</strong></div>
-                <div class="skill-card"><div class="icon">🎨</div><strong>Figma</strong></div>
-                <div class="skill-card"><div class="icon">💼</div><strong>Odoo</strong></div>
-                <div class="skill-card"><div class="icon">🐘</div><strong>PostgreSQL</strong></div>
-                <div class="skill-card"><div class="icon">⚡</div><strong>Blazor</strong></div>
-                <div class="skill-card"><div class="icon">📝</div><strong>WordPress</strong></div>
-                <div class="skill-card"><div class="icon">🔥</div><strong>Firebase</strong></div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000"></div>
+                    <strong>Git</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000"></div>
+                    <strong>Java</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"></div>
+                    <strong>Python</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"></div>
+                    <strong>React</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"></div>
+                    <strong>React Native</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000">
+                    </div><strong>JavaScript</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000">
+                    </div><strong>TypeScript</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=Q5FXgRZybr2A&format=png&color=000000"></div>
+                    <strong>HTML / CSS</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=JRnxU7ZWP4mi&format=png&color=000000">
+                    </div><strong>PostgreSQL</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=9AHxUOg7E9q2&format=png&color=000000"></div>
+                    <strong>Firebase</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"></div>
+                    <strong>Figma</strong>
+                </div>
+                <div class="skill-card">
+                    <div class="icon"><img src="https://img.icons8.com/?size=100&id=IPzemd2v4Ubj&format=png&color=000000"></div>
+                    <strong>Unity</strong>
+                </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- PROJECTS -->
         <section id="projects">
-            <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+            <h2>Proyectos</h2>
+
             <div class="projects-grid">
-                <!-- Cada proyecto se puede repetir como tarjeta -->
+
+                <!-- Instagram -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="./images/Captura de pantalla 2025-10-27 123338.png" alt="Instagram Login" onerror="this.src='placeholder.png'">
+                        <img src="./images/Login_Instagram.png" alt="Instagram Login">
                     </div>
                     <div class="project-content">
-                        <h3>Instagram Login - React</h3>
-                        <p data-es="Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original." data-en="Recreation of Instagram's login interface using React. Responsive design faithful to the original.">
-                            Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original.
-                        </p>
+                        <h3>Instagram Login – React</h3>
+                        <p>Recreación del login de Instagram con diseño responsive.</p>
                         <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
                         </div>
-                        <a href="https://github.com/DevAlvaroGA/InstagramLogin_React" target="_blank" class="project-link">
-                            <span>Ver en GitHub</span> <span>→</span>
+                        <a href="https://github.com/DevAlvaroGA/InstagramLogin_React" target="_blank"
+                            class="project-link">
+                            <span>Ver en GitHub</span><span>→</span>
                         </a>
                     </div>
                 </div>
+
+                <!-- Tic Tac Toe -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="./images/Captura de pantalla 2025-10-27 123338.png" alt="Instagram Login" onerror="this.src='placeholder.png'">
+                        <img src="./images/tictactoe.png" alt="Tic Tac Toe">
                     </div>
                     <div class="project-content">
-                        <h3>Instagram Login - React</h3>
-                        <p data-es="Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original." data-en="Recreation of Instagram's login interface using React. Responsive design faithful to the original.">
-                            Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original.
-                        </p>
+                        <h3>Tic Tac Toe – React</h3>
+                        <p>Juego clásico desarrollado en React con control de estado.</p>
                         <div class="project-tags">
                             <span class="tag">React</span>
-                            <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <a href="https://github.com/DevAlvaroGA/InstagramLogin_React" target="_blank" class="project-link">
-                            <span>Ver en GitHub</span> <span>→</span>
+                        <a href="https://github.com/DevAlvaroGA/TicTacToe_React" target="_blank" class="project-link">
+                            <span>Ver en GitHub</span><span>→</span>
                         </a>
                     </div>
                 </div>
+
+                <!-- Calculator -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="./images/Captura de pantalla 2025-10-27 123338.png" alt="Instagram Login" onerror="this.src='placeholder.png'">
+                        <img src="./images/Apple_Calculator.png" alt="Apple Calculator">
                     </div>
                     <div class="project-content">
-                        <h3>Instagram Login - React</h3>
-                        <p data-es="Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original." data-en="Recreation of Instagram's login interface using React. Responsive design faithful to the original.">
-                            Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original.
-                        </p>
+                        <h3>Apple Calculator – React Native</h3>
+                        <p>Clon funcional de la calculadora de iOS.</p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">TypeScript</span>
                         </div>
-                        <a href="https://github.com/DevAlvaroGA/InstagramLogin_React" target="_blank" class="project-link">
-                            <span>Ver en GitHub</span> <span>→</span>
+                        <a href="https://github.com/DevAlvaroGA/AppleCalculator_ReactNative" target="_blank"
+                            class="project-link">
+                            <span>Ver en GitHub</span><span>→</span>
                         </a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="./images/Captura de pantalla 2025-10-27 123338.png" alt="Instagram Login" onerror="this.src='placeholder.png'">
-                    </div>
-                    <div class="project-content">
-                        <h3>Instagram Login - React</h3>
-                        <p data-es="Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original." data-en="Recreation of Instagram's login interface using React. Responsive design faithful to the original.">
-                            Recreación de la interfaz de login de Instagram usando React. Diseño responsive y fiel al original.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <a href="https://github.com/DevAlvaroGA/InstagramLogin_React" target="_blank" class="project-link">
-                            <span>Ver en GitHub</span> <span>→</span>
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <p data-es="© 2025 Álvaro Gracia Aledo. Todos los derechos reservados." data-en="© 2025 Álvaro Gracia Aledo. All rights reserved.">© 2025 Álvaro Gracia Aledo. Todos los derechos reservados.</p>
+    <footer id="contact">
+        <p>© 2025 Álvaro Gracia Aledo</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
